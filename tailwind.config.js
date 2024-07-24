@@ -11,7 +11,7 @@ export default {
         //Neutral
         "very-dark-blue": "hsl(212, 36%, 37%",
         "dark-grayish-blue": "hsl(228, 12%, 48%",
-        white: "hsl(0, 0%, 100%",
+        white: "hsl(0, 0%, 100%)",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

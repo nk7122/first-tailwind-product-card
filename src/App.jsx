@@ -3,14 +3,8 @@ import productMobile from "./assets/images/image-product-mobile.jpg";
 import cart from "./assets/images/icon-cart.svg";
 function App() {
   return (
-    <main
-      className="bg-cream h-screen min-w-screen flex justify-center items-center text-regular 
-    text-dark-greyish-blue font-montserrat"
-    >
-      <div
-        className="grid sm:grid-cols-2 bg-[white] sm:auto-rows-max rounded-xl overflow-hidden
-       w-fit h-fit sm:max-w-xl max-w-sm "
-      >
+    <main className="min-w-screen text-regular text-dark-greyish-blue flex h-screen items-center justify-center bg-cream font-montserrat">
+      <div className="grid h-fit w-fit max-w-sm overflow-hidden rounded-xl bg-white sm:max-w-xl sm:auto-rows-max sm:grid-cols-2">
         <div>
           <picture>
             <source media="(max-width: 640px)" srcSet={productMobile} />
@@ -22,8 +16,8 @@ function App() {
           </picture>
         </div>
         <div className="p-7">
-          <p className="uppercase tracking-[0.5mm] mb-5">Perfume</p>
-          <h1 className="font-fraunces text-4xl font-bold text-very-dark-blue">
+          <p className="mb-5 uppercase tracking-[0.5mm]">Perfume</p>
+          <h1 className="text-very-dark-blue font-fraunces text-4xl font-bold">
             Gabrielle Essence Eau De Parfum
           </h1>
           <p className="mb-5 mt-5">
@@ -31,12 +25,12 @@ function App() {
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div className="flex gap-5">
-            <span className="font-fraunces text-dark-cyan text-3xl font-bold">
+            <span className="font-fraunces text-3xl font-bold text-dark-cyan">
               $149.99
             </span>
-            <span className="line-through flex items-center">$169.99</span>
+            <span className="flex items-center line-through">$169.99</span>
           </div>
-          <button className=" bg-dark-cyan flex gap-3 text-[white] w-full p-4 rounded-lg justify-center mt-3">
+          <button className="mt-3 flex w-full justify-center gap-3 rounded-lg bg-dark-cyan p-4 text-[white]">
             <img src={cart} alt="Cart icon" className="mt-1" />
             <span>Add to Cart</span>
           </button>
